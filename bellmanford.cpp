@@ -18,12 +18,7 @@ slistEl ** A;                     // Tablica dynamiczna list s¹siedztwa
 long long * d;                    // Tablica kosztów dojœcia
 int * p;                          // Tablica poprzedników
 
-// Funkcja wyznacza najkrótsze œcie¿ki
-// v - wierzcho³ek startowy
-// Wyjœcie:
-// true  - wyniki w d i p
-// false - graf zawiera ujemny cykl
-//------------------------------------
+
 bool BF(int v)
 {
   int i,x;

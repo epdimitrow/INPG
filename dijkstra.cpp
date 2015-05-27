@@ -1,10 +1,3 @@
-// I Liceum Ogólnokszta³c¹ce
-// im. K. Brodziñskiego
-// w Tarnowie
-//--------------------------
-// Ko³o informatyczne 2006/7
-//--------------------------
-// P012-01
 
 #include <iostream>
 
