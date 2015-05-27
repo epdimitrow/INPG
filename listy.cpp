@@ -138,35 +138,6 @@ void dlist::insert_after(dlistEl * e, char v)
   }
 }
 
-// Usuwa wybrany element z listy
-//------------------------------
-void dlist::remove(dlistEl * e)
-{
-  count--;
-  if(e->prev) e->prev->next = e->next;
-  else        head = e->next;
-  if(e->next) e->next->prev = e->prev;
-  else        tail = e->prev;
-  delete e;
-}
-
-// Usuwa element z pocz¹tku listy
-//-------------------------------
-void dlist::pop_front()
-{
-  if(count) remove(head);
-}
-
-// Usuwa element z koñca listy
-//----------------------------
-void dlist::pop_back()
-{
-  if(count) remove(tail);
-}
-
-//---------------
-// Program g³ówny
-//---------------
 
 int main()
 {
