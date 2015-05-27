@@ -14,15 +14,12 @@ struct slistEl
 
 // Zmienne globalne
 
-int m,n;                        // Liczba krawêdzi i wierzcho³ków
-slistEl **graf;                 // Tablica list s¹siedztwa
-int *S;                         // Tablica-stos
-int sptr;                       // WskaŸnik stosu
-bool *visited;                  // Tablica odwiedzin
+int m,n;                        
+slistEl **graf;                 
+int *S;                         
+int sptr;                       
+bool *visited;                  
 
-// Rekurencyjna procedura wyznaczaj¹ca œcie¿ki i cykle Hamiltona
-// v - wierzcho³ek bie¿¹cy
-//--------------------------------------------------------------
 void DFSHamilton(int v)
 {
   int i;
