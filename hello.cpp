@@ -17,3 +17,4 @@ int main()
     std::cout << "Koniec" << std::endl;
     return 0;
 }
+:):):):):):):):):)
