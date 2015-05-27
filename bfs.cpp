@@ -3,15 +3,15 @@
 #include <queue>
 using namespace std;
  
-const int n = 7;//Rozmiar macierzy incydencji
+const int n = 7;
  
-//Funkcja pomocnicza do wizualizacji dzialania//////////////////////////
+
  
-queue<int>VODWIEDZONE;//POmocniczy stos do symulacji odwiedzonych
+queue<int>VODWIEDZONE;
  
 void pokaz_odwiedzone()
 {
-//Jakie ju¿ odwiedziliœmy
+
 queue<int>kopia = VODWIEDZONE;
 printf("Juz odwiedzone: ");
 while(!kopia.empty())
@@ -56,9 +56,7 @@ printf("  %d",kolejka.front());
 kolejka.pop();
 }
 }
-////////////////////////////////////////////////////////////////////////
- 
-//////////////////DFS///////////////////////////////////////////////////
+
 void DFS(int G[n][n],int szukany)
 {
 stack<int> stos;
@@ -85,14 +83,14 @@ for(int j = n-1;j >= 0;--j)
 {
 if(G[j][szukany] != 0 && V[j] == false)
 {
-stos.push(j);//Wrzucamy na stos jego s¹siadów
-V[j] = true;//Znaznaczamy ,¿e go odwiedzimy!(w niedalekiej przysz³oœci)
-//Inaczej bêdziemy mieli np tak¹ sytuacjê w stosie 2,3,4,2 <-- 2x dwójka
+stos.push(j);
+V[j] = true;
+
 }
 }
 }
  
-pokaz_zawartosc_stosu_i_odwiedzone(stos);//Do symulacji
+pokaz_zawartosc_stosu_i_odwiedzone(stos);
 }
 ////////////////////////////////////////////////////////////////////////
  
