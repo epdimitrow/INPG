@@ -5,16 +5,13 @@ using namespace std;
 
 const int MAXINT = 2147483647;
 
-// Definicja typu elementów listy
-//-------------------------------
+
 struct slistEl
 {
   slistEl * next;
   int data;
 };
 
-// Definicja typu obiektowego queue
-//---------------------------------
 class queue
 {
   private:
@@ -30,19 +27,12 @@ class queue
     void pop(void);
 };
 
-//---------------------
-// Metody obiektu queue
-//---------------------
 
-// Konstruktor - tworzy pust¹ listê
-//---------------------------------
 queue::queue()
 {
   head = tail = NULL;
 }
 
-// Destruktor - usuwa listê z pamiêci
-//-----------------------------------
 queue::~queue()
 {
   while(head) pop();
