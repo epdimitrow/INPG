@@ -10,8 +10,6 @@ const int N = 20; // Liczebnoœæ zbioru.
 
 int d[N],p[N];
 
-// Procedura sortuj¹ca
-//--------------------
 
 void MergeSort(int i_p, int i_k)
 {
@@ -38,8 +36,7 @@ int main()
           "  (C)2005  Jerzy Walaszek\n\n"
           "Przed sortowaniem:\n\n";
 
-// Najpierw wype³niamy tablicê d[] liczbami pseudolosowymi
-// a nastêpnie wyœwietlamy jej zawartoœæ
+
 
   srand((unsigned)time(NULL));
 
@@ -51,7 +48,7 @@ int main()
 
   MergeSort(0,N-1);
   
-// Wyœwietlamy wynik sortowania
+
 
   cout << "Po sortowaniu:\n\n";
   for(i = 0; i < N; i++) cout << setw(4) << d[i];
